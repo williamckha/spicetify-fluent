@@ -6,9 +6,12 @@
 
 <br>
 
-![dark-1](screenshots/dark-1.png)
-![dark-2](screenshots/dark-2.png)
-![light-1](screenshots/light-1.png)
+![dark-1](screenshots/dark-1.png)  
+<br>
+![dark-2](screenshots/dark-2.png)  
+<br>
+![light-1](screenshots/light-1.png)  
+<br>
 
 ## About
 
