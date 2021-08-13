@@ -1,24 +1,28 @@
-# Fluent
+<div align=center><h1>Fluent</h1>  
 
-## Screenshots
+  [Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Windows 11 UI and Microsoft's Fluent Design  
+
+</div>
+
+<br>
+
 ![dark-1](screenshots/dark-1.png)
 ![dark-2](screenshots/dark-2.png)
 ![light-1](screenshots/light-1.png)
 
-## More
+## About
 
-### About
 
-[Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Windows 11 UI and Microsoft's Fluent Design.  
 Requires Segoe UI font.
 
 Based off [Ziro](https://github.com/schnensch0/ziro) theme by [schnensch](https://github.com/schnensch0)  
-[Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) by Microsoft Corporation
+[Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) by Microsoft Corporation  
+[Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) by Phosphor Icons
 
-### Install
+## Install
 Make sure spicetify >= v2.50 is installed. Run these commands:
 
-#### Windows
+### Windows
 In **Powershell**:
 ```powershell
 cd "$(spicetify -c | Split-Path)\Themes"
@@ -43,7 +47,7 @@ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
 
-### Customization
+## Customization
 Two color schemes are available: `light` or `dark`. Change scheme with commands:
 ```
 spicetify config color_scheme <scheme_name>
