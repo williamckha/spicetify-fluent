@@ -206,10 +206,13 @@ h3,
   padding: 6px;
 }
 
-.queue-tabBar-header,
-.queue-tabBar-nav {
-  display: inline-block;
-  width: auto;
+.queue-tabBar-header {
+  text-align: center;
+  min-width: 500px;
+}
+
+.queue-tabBar-headerItemLink {
+  transition: background-color ease-out 167ms;
 }
 
 .main-topBar-back {
@@ -285,8 +288,10 @@ h3,
 
 .icon > svg,
 .x-searchInput-searchInputIconContainer path,
-.show-episodeBlock-playerActions svg {
-  display: none;
+.show-episodeBlock-playerActions svg, 
+.main-playButton-PlayButton polygon, 
+.main-playButton-PlayButton rect {
+  display: none !important;
 }
 
 .home-icon {
@@ -323,11 +328,13 @@ h3,
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_add_circle_24_regular.svg');
   background-color: var(--spice-subtext) !important;
   padding: 0px;
-  margin-left: 10px;
+  margin: auto;
+  display: block !important; 
 }
 
 .main-createPlaylistButton-createPlaylistIcon {
   background-color: var(--spice-subtext) !important;
+  display: block !important;
 }
 
 .main-createPlaylistButton-createPlaylistIcon > svg, .main-createPlaylistButton-text {
@@ -503,7 +510,7 @@ button.switch {
 }
 
 .main-navBar-navBarLink:active {
-  background-color: rgba(var(--spice-rgb-selected-row), .1);
+  background-color: rgba(var(--spice-rgb-selected-row), 0.5);
 }
 
 .main-navBar-navBarLinkActive,
@@ -512,6 +519,11 @@ button.switch {
 .main-navBar-navBarLinkActive:focus {
   background-color: var(--spice-selected-row);
   color: var(--spice-not-selected);
+  transition: 167ms ease-out all;
+}
+
+.main-navBar-navBarLink {
+  transition: background-color ease-out 167ms;
 }
 
 .main-navBar-navBarLinkActive>span.ellipsis-one-line {
@@ -967,14 +979,21 @@ a[class*='-tabBar-headerItemLink']:active {
   border-radius: var(--border-radius-2) !important;
   padding-right: 0px;
   padding-left: 12px;
+  transition: background-color ease-in 167ms;
+}
+
+.x-searchInput-searchInputInput:focus {
+  background-color: var(--spice-main);
+  border-bottom: var(--spice-accent) solid 2px;
 }
 
 .x-searchInput-searchInput {
-  margin-left: -182px;
+  -webkit-box-flex: 1;
+  width: 40vw;
 }
 
 .x-searchInput-searchInputIconContainer {
-  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .x-searchInput-searchInputSearchIcon {
@@ -988,6 +1007,7 @@ a[class*='-tabBar-headerItemLink']:active {
 
 .x-searchInput-searchInputClearButton {
   margin-left: 5px;
+  margin-right: 12px;
   height: 48px;
 }
 
