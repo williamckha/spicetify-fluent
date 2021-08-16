@@ -849,6 +849,10 @@ li.GlueDropTarget--playlists {
   color: var(--spice-text);
 }
 
+.x-emptyState-container {
+  height: auto;
+  margin-top: 120px;
+}
 
 /* artist page */
 
@@ -963,11 +967,11 @@ a[class*='-tabBar-active'] {
 }
 
 a[class*='-tabBar-headerItemLink']:hover {
-  background-color: rgba(var(--spice-rgb-selected-row), 0.5);
+  background-color: rgba(var(--spice-rgb-selected-row), 0.3);
 }
 
 a[class*='-tabBar-headerItemLink']:active {
-  background-color: rgba(var(--spice-rgb-selected-row), 0.8);
+  background-color: rgba(var(--spice-rgb-selected-row), 0.5);
 }
 
 
