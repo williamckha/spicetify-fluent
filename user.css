@@ -324,11 +324,13 @@ h3,
   background-color: var(--spice-accent) !important; 
 }
 
-.main-createPlaylistButton-icon {
+.main-createPlaylistButton-button {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_add_circle_24_regular.svg');
   background-color: var(--spice-subtext) !important;
   padding: 0px;
   margin: auto;
+  height: 24px !important;
+  width: 24px !important;
   display: block !important; 
 }
 
@@ -445,6 +447,10 @@ button.switch {
   z-index: 1 !important;
   max-width: 85px !important;
   height: 130%;
+}
+
+.main-navBar-navBar {
+  width: 85px !important;
 }
 
 .main-navBar-navBarLink {
