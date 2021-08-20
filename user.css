@@ -334,6 +334,10 @@ h3,
   display: block !important; 
 }
 
+.main-createPlaylistButton-button svg {
+  display: none !important;
+}
+
 .main-createPlaylistButton-createPlaylistIcon {
   background-color: var(--spice-subtext) !important;
   display: block !important;
@@ -844,7 +848,7 @@ li.GlueDropTarget--playlists {
   color: var(--spice-text) !important;
 }
 
-.fIDrcz {
+.fIDrcz, .ghlXvf {
   fill: var(--spice-text);
 }
 
@@ -1270,14 +1274,20 @@ option {
   border-top: 0px;
 }
 
+.now-playing--cover-expanded {
+  transform: translateX(0px) !important;
+}
+
 .playback-bar,
+.progress-bar__fg_wrapper,
 ._95134b8c1897fc7ed23d86e424a2e9b4-scss {
   --fg-color: var(--spice-accent) !important;
   --is-active-fg-color: var(--spice-accent) !important;
   --bg-color: var(--spice-player-bar-bg);
 }
 
-._8753b35a98c172d2fed1c66a738ff034-scss {
+._8753b35a98c172d2fed1c66a738ff034-scss,
+.progress-bar__slider {
   background-color: var(--spice-accent) !important;
   border: 4px solid var(--spice-selected-row);
   box-shadow: 0 0 3px 0 var(--spice-player-bar-shadow) !important;
@@ -1379,25 +1389,8 @@ option {
   color: var(--spice-text) !important;
 }
 
-.progress-bar__slider {
-  opacity: 1;
-  background-color: var(--spice-card);
-  border: 2px solid var(--spice-button)
-}
-
 .progress-bar--is-active .progress-bar__slider:focus {
   background-color: var(--spice-accent);
-}
-
-.playback-bar .progress-bar__slider {
-  width: 20px;
-  height: 20px;
-}
-
-.volume-bar .progress-bar__slider {
-  width: 16px;
-  height: 16px;
-  margin-left: -8px;
 }
 
 .volume-bar {
