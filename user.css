@@ -1297,7 +1297,8 @@ option {
   opacity: 1 !important;
 }
 
-.main-nowPlayingWidget-nowPlaying>.ellipsis-one-line {
+.main-nowPlayingWidget-nowPlaying>.ellipsis-one-line,
+.main-trackInfo-container {
   margin-left: 74px;
 }
 
