@@ -1175,6 +1175,19 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
   color: var(--spice-text) !important;
 }
 
+.main-buddyFeed-header {
+  opacity: 1 !important;
+}
+
+.main-buddyFeed-friendsFeedContainer {
+  margin-top: 60px;
+}
+
+.main-buddyFeed-findFriendsIcon,
+.main-buddyFeed-addFriendPlaceholderIcon {
+  color: var(--spice-text) !important;
+}
+
 .main-buddyFeed-username a {
   color: var(--spice-text) !important;
 }
@@ -1453,6 +1466,7 @@ option {
 
 .player-controls__buttons {
   margin-bottom: 8px;
+  align-items: center;
 }
 
 .player-controls__buttons path {
