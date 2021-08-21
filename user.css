@@ -444,6 +444,9 @@ button.switch {
   background-color: var(--spice-card);
 }
 
+.x-carousel-button svg {
+  fill: var(--spice-text) !important;
+}
 
 /* sidebar */
 
@@ -1143,6 +1146,34 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 
 
 /* friend activity */
+.spotify__container--is-desktop.spotify__os--is-windows.buddyfeed-visible .main-topBar-container {
+  padding-inline-end: 170px;
+}
+
+.main-connectToFacebook-text,
+.main-connectToFacebook-disclaimer,
+.main-connectToFacebook-headerTitle,
+.main-addFriendsView-headerText p {
+  color: var(--spice-text);
+}
+
+.main-addFriendsView-header {
+  margin-top: 16px;
+  border-bottom: 1px solid var(--spice-selected-row) !important;
+}
+
+.main-addFriendsView-facebookIconWrapper {
+  background-color: #008AFF !important;
+}
+
+.main-addFriendsView-filterInput {
+  background-color: var(--spice-card) !important;
+  color: var(--spice-text) !important;
+}
+
+.main-addFriendsView-filterInput::placeholder {
+  color: var(--spice-text) !important;
+}
 
 .main-buddyFeed-username a {
   color: var(--spice-text) !important;
@@ -1169,6 +1200,10 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .main-buddyFeed-buddyFeed {
   width: 280px;
   z-index: 0;
+}
+
+.main-buddyFeed-buddyFeedRoot .main-avatar-avatar {
+  margin-right: 8px;
 }
 
 .main-buddyFeed-activityMetadata {
@@ -1455,6 +1490,10 @@ option {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
+}
+
+.main-repeatButton-on[aria-label="Disable repeat"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg') !important;
 }
 
 .main-shuffleButton-button {
