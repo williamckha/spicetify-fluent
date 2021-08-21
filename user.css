@@ -386,8 +386,8 @@ button.switch {
 
 #spicetify-home-config button,
 #spicetify-sidebar-config button {
-  background-color: var(--spice-button) !important;
-  color: var(--spice-shadow) !important;
+  background-color: var(--spice-main) !important;
+  color: var(--spice-text) !important;
   border: none !important;
 }
 
