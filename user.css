@@ -22,7 +22,7 @@
 .Root__main-view {
   z-index: 0;
   background-color: var(--spice-main);
-  height: 110%;
+  height: 100%;
 }
 
 .os-scrollbar {
@@ -324,6 +324,16 @@ h3,
   background-color: var(--spice-accent) !important; 
 }
 
+.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-icon {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_regular.svg');
+  background-color: var(--spice-subtext) !important; 
+}
+
+.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-active-icon {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_filled.svg');
+  background-color: var(--spice-accent) !important; 
+}
+
 .main-createPlaylistButton-button {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_add_circle_24_regular.svg');
   background-color: var(--spice-subtext) !important;
@@ -547,10 +557,6 @@ button.switch {
 
 
 /* playlist sidebar */
-
-.spicetify-playlist-list {
-  height:
-}
 
 .main-createPlaylistButton-button,
 ._6b5bc370e9834a4932f57284a96a0748-scss,
@@ -1150,6 +1156,10 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
   padding-inline-end: 170px;
 }
 
+.main-connectToFacebook-container {
+  margin-top: 50px;
+}
+
 .main-connectToFacebook-text,
 .main-connectToFacebook-disclaimer,
 .main-connectToFacebook-headerTitle,
@@ -1180,7 +1190,7 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 }
 
 .main-buddyFeed-friendsFeedContainer {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 .main-buddyFeed-findFriendsIcon,
@@ -1308,7 +1318,7 @@ option {
 
 .Root__now-playing-bar {
   padding-right: 6px;
-  margin: 13px;
+  margin: 0px 13px 13px 13px;
   width: calc(100% - 26px);
   box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25) !important;
   border-radius: var(--border-radius-1);
