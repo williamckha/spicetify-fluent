@@ -324,6 +324,16 @@ h3,
   background-color: var(--spice-accent) !important; 
 }
 
+.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-icon {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_regular.svg');
+  background-color: var(--spice-subtext) !important; 
+}
+
+.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-active-icon {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_filled.svg');
+  background-color: var(--spice-accent) !important; 
+}
+
 .main-createPlaylistButton-button {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_add_circle_24_regular.svg');
   background-color: var(--spice-subtext) !important;
