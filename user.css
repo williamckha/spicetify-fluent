@@ -1504,20 +1504,22 @@ option {
   height: 22px !important;
 }
 
-.main-repeatButton-button {
+.main-repeatButton-button[aria-label="Enable repeat"]{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
   background-color: var(--spice-subtext) !important;
   height: 22px !important; 
 }
 
-.main-repeatButton-on {
+.main-repeatButton-button{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
-.main-repeatButton-on[aria-label="Disable repeat"] {
+.main-repeatButton-button[aria-label="Disable repeat"]{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg') !important;
+  background-color: var(--spice-text) !important;
+  height: 22px !important;
 }
 
 .main-shuffleButton-button {
@@ -1526,15 +1528,10 @@ option {
   height: 22px !important;
 }
 
-.main-shuffleButton-on {
+.main-shuffleButton-button[aria-label="Disable shuffle"] {
   -webkit-mask-image: url('./phosphor-icons/shuffle-bold.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
-}
-
-.main-repeatButton-on:after,
-.main-shuffleButton-on:after {
-  content: none !important;
 }
 
 
@@ -1575,13 +1572,13 @@ option {
   background-color: var(--spice-text) !important;
 }
 
-.main-trackList-rowPlayPauseButton {
+.gro_tSi7cwspepH0as03 {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
   background-color: var(--spice-text) !important; 
   padding: 0px !important;
 }
 
-.main-trackList-rowPlayPauseButton[aria-label="Pause"] {
+.gro_tSi7cwspepH0as03[aria-label="Pause"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg') !important;
   background-color: var(--spice-text) !important;
 }
