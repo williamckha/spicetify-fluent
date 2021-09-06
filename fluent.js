@@ -10,8 +10,7 @@
   }
 
   waitForElement([
-    ".main-rootlist-rootlistItemLink",
-    "#spicetify-playlist-list"
+    ".main-rootlist-rootlistItemLink"
   ], function() {
 
     function replacePlaylistIcons() {
