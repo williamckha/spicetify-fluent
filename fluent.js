@@ -83,4 +83,13 @@
     document.documentElement.style.setProperty('--filter-brightness', 0);
   }
 
+  Spicetify.Player.addEventListener("onplaypause", playerState => {
+    const playButton = document.querySelector(".main-playButton-button")
+    if (!playButton) return;
+    if (playerState.data.is_paused) {
+      playButton.style.cssText = "-webkit-mask-image: url('https://api.iconify.design/fluent/play-24-filled.svg');";
+    } else {
+      playButton.style.cssText = "-webkit-mask-image: url('https://api.iconify.design/fluent/pause-24-filled.svg');";
+    }
+  });
 })();
