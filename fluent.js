@@ -57,8 +57,8 @@
   });
 
   waitForElement([
-    '.main-navBar-navBarLink',
-    '[href="/collection"] > span'
+    ".main-navBar-navBarLink",
+    "[href='/collection'] > span"
   ], () => {
     const navBarItems = document.getElementsByClassName("main-navBar-navBarLink");
     for (const item of navBarItems) {
@@ -66,7 +66,7 @@
       div.classList.add("navBar-navBarLink-accent");
       item.appendChild(div);
     }
-    document.querySelector('[href="/collection"] > span').innerHTML = "Library";
+    document.querySelector("[href='/collection'] > span").innerHTML = "Library";
   });
 
   const textColor = getComputedStyle(document.documentElement).getPropertyValue('--spice-text');
@@ -74,13 +74,35 @@
     document.documentElement.style.setProperty('--filter-brightness', 0);
   }
 
-  Spicetify.Player.addEventListener("onplaypause", playerState => {
-    const playButton = document.querySelector(".main-playButton-button")
-    if (!playButton) return;
-    if (playerState.data.is_paused) {
-      playButton.style.cssText = "-webkit-mask-image: url('https://api.iconify.design/fluent/play-24-filled.svg');";
-    } else {
-      playButton.style.cssText = "-webkit-mask-image: url('https://api.iconify.design/fluent/pause-24-filled.svg');";
+  function updatePlayListPlayButton() {
+    const currentLocation = Spicetify.Platform.History.location.pathname;
+    if (currentLocation.search("playlist")) {
+      const id = currentLocation.split("/").pop();
+      const currentCtx = Spicetify.Player.data.context_uri;
+      if (currentCtx && currentCtx.search(id) !== -1) {
+        const playButton = document.querySelector(".main-actionBar-ActionBarRow > .main-playButton-PlayButton.main-playButton-primary");
+        if (!playButton) return;
+        if (Spicetify.Player.data.is_paused) {
+          playButton.classList.remove("fluent-pause-button");
+        } else {
+          playButton.classList.add("fluent-pause-button");
+        }
+      }
     }
-  });
+  }
+
+  function updatePlayerPlayButton() {
+    const playButton = document.querySelector(".main-playButton-button");
+    if (!playButton) return;
+    if (Spicetify.Player.data.is_paused) {
+      playButton.classList.remove("fluent-pause-button");
+    } else {
+      playButton.classList.add("fluent-pause-button");
+    }
+    updatePlayListPlayButton();
+  }
+
+  Spicetify.Player.addEventListener("onplaypause", event => updatePlayerPlayButton());
+  Spicetify.Player.addEventListener("songchange", event => updatePlayerPlayButton()); // switch between playlists (playing state)
+  Spicetify.Player.addEventListener("appchange", event => updatePlayListPlayButton()); // update on playlist page
 })();
