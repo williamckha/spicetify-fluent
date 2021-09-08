@@ -1353,14 +1353,13 @@ option {
 
 .playback-bar,
 .progress-bar__fg_wrapper,
-._95134b8c1897fc7ed23d86e424a2e9b4-scss,
-.lRNLjBiX_H7SPYbkJKLp {
+.lRNLjBiX_H7SPYbkJKLp,
+.lIrtJi5Y_8ENU19VSvJO {
   --fg-color: var(--spice-accent) !important;
   --is-active-fg-color: var(--spice-accent) !important;
   --bg-color: var(--spice-player-bar-bg);
 }
 
-._8753b35a98c172d2fed1c66a738ff034-scss,
 .progress-bar__slider,
 .giO6cIQ8auPNZuTvC4Y8 {
   background-color: var(--spice-accent) !important;
