@@ -11,43 +11,38 @@
 
   waitForElement([
     ".main-rootlist-rootlistItemLink"
-  ], function() {
-
+  ], function () {
     function replacePlaylistIcons() {
+      const playListItems = document.getElementsByClassName("main-rootlist-rootlistItemLink");
 
-      var els = document.getElementsByClassName("main-rootlist-rootlistItemLink");
-      for (let i = 0; i < els.length; i++) {
-
-        let link = els[i];
-        let [_, app, uid] = link.pathname.split("/");
+      for (const item of playListItems) {
+        const link = item.pathname;
         let uri;
-        if (app == "playlist") {
-          uri = Spicetify.URI.playlistV2URI(uid);
-        } else if (app == "folder") {
-          link.style.content = "url(https://api.iconify.design/fluent/folder-24-regular.svg?color=%23bbb)"
-          link.style.padding = "10px";
+        if (link.search("playlist") !== -1) {
+          uri = Spicetify.URI.playlistV2URI(link.split("/").pop());
+        } else if (link.search("folder") !== -1) {
+          item.style.content = "url(https://api.iconify.design/fluent/folder-24-regular.svg?color=%23bbb)"
+          item.style.padding = "10px";
           continue;
         }
 
         Spicetify.CosmosAsync.get(
-          `sp://core-playlist/v1/playlist/${uri.toURI()}/metadata`, {
-            policy: {
-              picture: true
-            }
+          `sp://core-playlist/v1/playlist/${uri.toString()}/metadata`, {
+          policy: {
+            picture: true
           }
+        }
         ).then(res => {
           const meta = res.metadata;
-          if (meta.picture == "") {
-            link.style.content = "url(https://api.iconify.design/fluent/music-note-2-24-regular.svg?color=%23bbb)"
-            link.style.padding = "10px";
+          if (meta.picture === "") {
+            item.style.content = "url(https://api.iconify.design/fluent/music-note-2-24-regular.svg?color=%23bbb)"
+            item.style.padding = "10px";
           } else {
-            link.style.backgroundImage = "url(" + meta.picture + ")";
-            link.style.content = "";
+            item.style.backgroundImage = "url(" + meta.picture + ")";
+            item.style.content = "";
           }
         });
-
-      }
-
+      };
     };
 
     replacePlaylistIcons();
@@ -64,21 +59,18 @@
   waitForElement([
     '.main-navBar-navBarLink',
     '[href="/collection"] > span'
-  ], function() {
-    var accent = getComputedStyle(document.documentElement).getPropertyValue('--spice-accent').replace(" #", "");
-    var icons = ["home", "search", "library"];
-    var els = document.getElementsByClassName("main-navBar-navBarLink");
-    for (let i = 0; i < els.length; i++) {
-      let link = els[i];
+  ], () => {
+    const navBarItems = document.getElementsByClassName("main-navBar-navBarLink");
+    for (const item of navBarItems) {
       let div = document.createElement("div");
       div.classList.add("navBar-navBarLink-accent");
-      link.appendChild(div);
+      item.appendChild(div);
     }
     document.querySelector('[href="/collection"] > span').innerHTML = "Library";
   });
 
-  var text_color = getComputedStyle(document.documentElement).getPropertyValue('--spice-text');
-  if (text_color == " #000000") {
+  const textColor = getComputedStyle(document.documentElement).getPropertyValue('--spice-text');
+  if (textColor == " #000000") {
     document.documentElement.style.setProperty('--filter-brightness', 0);
   }
 
