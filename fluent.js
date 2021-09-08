@@ -53,12 +53,13 @@
     replacePlaylistIcons();
 
     const observer = new MutationObserver(replacePlaylistIcons);
-    const rootList = document.querySelector("#spicetify-playlist-list");
-    observer.observe(rootList, {
-      childList: true,
-      subtree: true
+    waitForElement(["#spicetify-playlist-list"], function() {
+      const rootList = document.querySelector("#spicetify-playlist-list");
+      observer.observe(rootList, {
+        childList: true,
+        subtree: true
+      });
     });
-
   });
 
   waitForElement([
