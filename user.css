@@ -712,24 +712,19 @@ li.GlueDropTarget--playlists {
   display: none;
 }
 
-.vB_gmMwzmB3GcEliiiys:hover {
-  overflow-y: scroll;
-  margin-left: 4px;
-}
-
-.vB_gmMwzmB3GcEliiiys {
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys {
   overflow-y: scroll;
   margin-left: 4px;
   height: calc(100vh - 500px) !important;
 }
 
 .main-rootlist-wrapper::-webkit-scrollbar,
-.vB_gmMwzmB3GcEliiiys::-webkit-scrollbar {
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys::-webkit-scrollbar {
   width: 4px;
 }
 
 .main-rootlist-wrapper::-webkit-scrollbar-thumb,
-.vB_gmMwzmB3GcEliiiys::-webkit-scrollbar-thumb  {
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys::-webkit-scrollbar-thumb  {
   background-color: var(--spice-card);
   border-radius: var(--border-radius-2);
 }
