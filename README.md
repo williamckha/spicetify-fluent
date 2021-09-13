@@ -51,7 +51,7 @@ spicetify apply
 ```
 
 ## Customization
-Two color schemes are available: `light` or `dark`. Change scheme with commands:
+Three color schemes are available: `light`, `dark` or `dracula`. Change scheme with commands:
 ```
 spicetify config color_scheme <scheme_name>
 spicetify apply
