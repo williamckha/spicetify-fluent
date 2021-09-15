@@ -1604,8 +1604,3 @@ option {
   background-color: var(--spice-text) !important;
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
 }
-
-.fluent-pause-button {
-  background-color: var(--spice-text) !important;
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
-}
