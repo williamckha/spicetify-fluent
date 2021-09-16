@@ -641,7 +641,8 @@ li.GlueDropTarget--playlists {
   height: 70%;
 }
 
-.main-rootlist-expandArrow {
+.main-rootlist-expandArrow,
+.pJFm5xRtKuufaI2uNf6w {
   color: var(--spice-text);
   position: relative;
   margin-inline-start: -32px;
@@ -650,7 +651,8 @@ li.GlueDropTarget--playlists {
   top: 17px;
 }
 
-.main-rootlist-expandArrowRotated {
+.main-rootlist-expandArrowRotated,
+.pJFm5xRtKuufaI2uNf6w {
   right: -5px !important;
   top: 14px !important;
 }
@@ -710,11 +712,19 @@ li.GlueDropTarget--playlists {
   display: none;
 }
 
-.main-rootlist-wrapper::-webkit-scrollbar {
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys {
+  overflow-y: scroll;
+  margin-left: 4px;
+  height: calc(100vh - 500px) !important;
+}
+
+.main-rootlist-wrapper::-webkit-scrollbar,
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys::-webkit-scrollbar {
   width: 4px;
 }
 
-.main-rootlist-wrapper::-webkit-scrollbar-thumb {
+.main-rootlist-wrapper::-webkit-scrollbar-thumb,
+.main-rootlist-wrapper .vB_gmMwzmB3GcEliiiys::-webkit-scrollbar-thumb  {
   background-color: var(--spice-card);
   border-radius: var(--border-radius-2);
 }
@@ -1353,14 +1363,13 @@ option {
 
 .playback-bar,
 .progress-bar__fg_wrapper,
-._95134b8c1897fc7ed23d86e424a2e9b4-scss,
-.lRNLjBiX_H7SPYbkJKLp {
+.lRNLjBiX_H7SPYbkJKLp,
+.lIrtJi5Y_8ENU19VSvJO {
   --fg-color: var(--spice-accent) !important;
   --is-active-fg-color: var(--spice-accent) !important;
   --bg-color: var(--spice-player-bar-bg);
 }
 
-._8753b35a98c172d2fed1c66a738ff034-scss,
 .progress-bar__slider,
 .giO6cIQ8auPNZuTvC4Y8 {
   background-color: var(--spice-accent) !important;
@@ -1530,31 +1539,33 @@ option {
   height: 22px !important;
 }
 
-.main-repeatButton-button[aria-label="Enable repeat"]{
+/* Disabled */
+.main-repeatButton-button[aria-checked="false"]{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
   background-color: var(--spice-subtext) !important;
   height: 22px !important; 
 }
-
-.main-repeatButton-button{
+/* Repeat one */
+.main-repeatButton-button[aria-checked="mixed"]{
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg') !important;
+  background-color: var(--spice-text) !important;
+  height: 22px !important;
+}
+/* Repeat all */
+.main-repeatButton-button[aria-checked="true"]{
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
-.main-repeatButton-button[aria-label="Disable repeat"]{
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg') !important;
-  background-color: var(--spice-text) !important;
-  height: 22px !important;
-}
-
+/* Shuffle disabled */
 .main-shuffleButton-button {
   -webkit-mask-image: url('./phosphor-icons/shuffle.svg');
   background-color: var(--spice-subtext) !important;
   height: 22px !important;
 }
-
-.main-shuffleButton-button[aria-label="Disable shuffle"] {
+/* Shuffle enabled */
+.main-shuffleButton-button[aria-checked="true"] {
   -webkit-mask-image: url('./phosphor-icons/shuffle-bold.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
@@ -1588,25 +1599,8 @@ option {
   padding: 10px;
 }
 
-.main-playButton-PlayButton[aria-label="Play"],
-.main-playPauseButton-button[aria-label="Play"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
-  background-color: var(--spice-text) !important; 
-}
-
-.main-playButton-PlayButton[aria-label="Pause"],
-.main-playPauseButton-button[aria-label="Pause"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
+.main-playButton-button,
+.main-playButton-PlayButton {
   background-color: var(--spice-text) !important;
-}
-
-.gro_tSi7cwspepH0as03 {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
-  background-color: var(--spice-text) !important; 
-  padding: 0px !important;
-}
-
-.gro_tSi7cwspepH0as03[aria-label="Pause"] {
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg') !important;
-  background-color: var(--spice-text) !important;
 }
