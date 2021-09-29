@@ -1593,26 +1593,23 @@ option {
 
 /* play buttons */
 
-.main-playButton-PlayButton,
-.main-playPauseButton-button,
-.main-trackList-rowPlayPauseButton {
-  padding: 10px;
-}
-
 .main-playButton-button,
-.main-playButton-PlayButton{
+.main-playButton-PlayButton,
+.main-trackList-rowPlayPauseButton{
   background-color: var(--spice-text) !important;
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
 }
 
 .main-playButton-PlayButton[aria-label="Play"],
-.main-playPauseButton-button[aria-label="Play"] {
+.main-playPauseButton-button[aria-label="Play"],
+.main-trackList-rowPlayPauseButton[aria-label="Play"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
   background-color: var(--spice-text) !important; 
 }
 
 .main-playButton-PlayButton[aria-label="Pause"],
-.main-playPauseButton-button[aria-label="Pause"] {
+.main-playPauseButton-button[aria-label="Pause"],
+.main-trackList-rowPlayPauseButton[aria-label="Pause"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
   background-color: var(--spice-text) !important;
 }
