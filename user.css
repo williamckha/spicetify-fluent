@@ -42,6 +42,10 @@
   display: none;
 }
 
+.contentSpacing { 
+  max-width: 100vw !important; 
+}
+
 .main-home-homeHeader,
 .main-actionBarBackground-background {
   background-image: none;
