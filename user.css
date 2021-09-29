@@ -19,10 +19,6 @@
   -webkit-mask-size: contain;
 }
 
-.contentSpacing {
-    max-width: 100vw !important;
-}
-
 .Root__main-view {
   z-index: 0;
   background-color: var(--spice-main);
