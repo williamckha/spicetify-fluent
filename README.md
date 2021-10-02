@@ -50,6 +50,15 @@ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
 
+### Important
+For the sidebar playlists to show properly, ensure that these two lines are added in your config-xpui.ini file:
+```ini
+[Patch]
+xpui.js_find_8008 = ,(\w+=)32,
+xpui.js_repl_8008 = ,${1}56,
+```
+
+
 ## Customization
 Three color schemes are available: `light`, `dark` or `dracula`. Change scheme with commands:
 ```
