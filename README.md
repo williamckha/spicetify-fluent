@@ -51,7 +51,7 @@ spicetify apply
 ```
 
 ### Important
-For the sidebar playlists to show properly, ensure that these two lines are added in your config-xpui.ini file:
+For the sidebar playlists to show properly, ensure that these two lines are added in the Patch section of your config-xpui.ini file:
 ```ini
 [Patch]
 xpui.js_find_8008 = ,(\w+=)32,
