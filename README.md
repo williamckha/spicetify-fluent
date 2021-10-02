@@ -23,7 +23,7 @@ Based off [Ziro](https://github.com/schnensch0/ziro) theme by [schnensch](https:
 [Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) by Phosphor Icons
 
 ## Install
-Make sure spicetify >= v2.63 is installed. Run these commands:
+Make sure spicetify >= v2.6.6 is installed. Run these commands:
 
 ### Windows
 In **Powershell**:
