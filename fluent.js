@@ -22,7 +22,6 @@
           uri = Spicetify.URI.playlistV2URI(link.split("/").pop());
         } else if (link.search("folder") !== -1) {
           item.style.content = "url(https://api.iconify.design/fluent/folder-24-regular.svg?color=%23bbb)"
-          item.style.padding = "10px";
           continue;
         }
 
@@ -36,19 +35,19 @@
           const meta = res.metadata;
           if (meta.picture === "") {
             item.style.content = "url(https://api.iconify.design/fluent/music-note-2-24-regular.svg?color=%23bbb)"
-            item.style.padding = "10px";
           } else {
             item.style.backgroundImage = "url(" + meta.picture + ")";
             item.style.content = "";
           }
         });
       };
+
     };
 
     replacePlaylistIcons();
     const observer = new MutationObserver(replacePlaylistIcons);
-    waitForElement([".main-rootlist-wrapper .os-content"], () => {
-      const rootList = document.querySelector(".main-rootlist-wrapper .os-content");
+    waitForElement(["#spicetify-playlist-list"], () => {
+      const rootList = document.querySelector("#spicetify-playlist-list");
       observer.observe(rootList, {
         childList: true,
         subtree: true
