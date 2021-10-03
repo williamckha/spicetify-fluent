@@ -67,3 +67,4 @@ spicetify apply
 ```
 You can change the accent color in the theme folder's color.ini file.  
 If you are using Windows, you can hide the window controls by adding the flag `--transparent-window-controls` after Spotify.exe in your Spotify shortcut.
+Use "Sidebar config" in the Spotify profile menu to hide/unhide and stick/unstick the Liked Songs and My Episodes icons in the sidebar.
