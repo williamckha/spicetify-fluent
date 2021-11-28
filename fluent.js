@@ -1,6 +1,6 @@
 (function fluent() {
 
-  function waitForElement(els, func, timeout = 10000) {
+  function waitForElement(els, func, timeout = 1000000) {
     const queries = els.map(el => document.querySelector(el));
     if (queries.every(a => a)) {
       func();
