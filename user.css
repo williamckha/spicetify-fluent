@@ -961,7 +961,7 @@ a[class*='-tabBar-headerItemLink']:active {
 
 /* search */
 
-.x-searchInput-searchInputInput, 
+.x-searchInput-searchInputInput,
 .dIwMadpRrW1PwEwEeAbN,
 .G9iUss4eOSpJyn2VBzsS {
   background-color: var(--spice-card);
@@ -972,20 +972,20 @@ a[class*='-tabBar-headerItemLink']:active {
   transition: background-color ease-in 167ms;
 }
 
-.x-searchInput-searchInputInput:focus, 
+.x-searchInput-searchInputInput:focus,
 .dIwMadpRrW1PwEwEeAbN:focus,
 .G9iUss4eOSpJyn2VBzsS:focus {
   background-color: var(--spice-main);
   border-bottom: var(--spice-accent) solid 2px;
 }
 
-.x-searchInput-searchInput, ._UTWTgKCqE8eruFNFAMf {
+.x-searchInput-searchInput, .g3Xinb8x23n81ejvS9Uj {
   -webkit-box-flex: 1;
   width: 40vw;
 }
 
 .x-searchInput-searchInputIconContainer, 
-._6e_T5d5DVIdzLw3pCIw {
+.t2K4_iLmAyDtH7mcT5Wy {
   flex-direction: row-reverse;
 }
 
@@ -993,8 +993,7 @@ a[class*='-tabBar-headerItemLink']:active {
   flex: 0 !important;
 }
 
-.x-searchInput-searchInputSearchIcon, 
-.c16n2m346Ss2TcRUx8Bw .BDcKgSW_ys9_Hj2DwDBW {
+.x-searchInput-searchInputSearchIcon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_search_16_regular.svg');
   background-color: var(--spice-subtext) !important; 
   flex: 0;
@@ -1003,26 +1002,23 @@ a[class*='-tabBar-headerItemLink']:active {
   width: 16px;
 }
 
-.BDcKgSW_ys9_Hj2DwDBW path {
+.x-searchInput-searchInputSearchIcon path {
   display: none;
 }
 
-.x-searchInput-searchInputClearButton, 
-.g7ggq46CbOli19ZxJlQe .BDcKgSW_ys9_Hj2DwDBW {
+.x-searchInput-searchInputClearButton {
   margin-left: 5px;
   margin-right: 12px;
   height: 20px;
 }
 
-.x-searchInput-searchInputClearButton path, 
-.g7ggq46CbOli19ZxJlQe .BDcKgSW_ys9_Hj2DwDBW path {
+.x-searchInput-searchInputClearButton path {
   display: block !important;
   stroke: var(--spice-subtext) !important;
   stroke-width: 1.3px;
 }
 
-.x-searchInput-searchInputClearButton svg, 
-.g7ggq46CbOli19ZxJlQe .BDcKgSW_ys9_Hj2DwDBW svg {
+.x-searchInput-searchInputClearButton svg {
   padding: 3px;
 }
 
@@ -1311,7 +1307,7 @@ option {
 }
 
 .main-connectBar-connectBar .icon, 
-.main-connectBar-connectBar .gSLhUO {
+.main-connectBar-connectBar .hDgDGI {
   margin: 0px;
   margin-right: 8px;
 }
