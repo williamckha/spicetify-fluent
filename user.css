@@ -293,14 +293,14 @@ h3,
 
 /* buttons */
 
-.icon, .gSLhUO {
+.icon, .hDgDGI {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   margin: auto;
   display: block;
 }
 
-.main-navBar-navBarLink .gSLhUO path,
+.main-navBar-navBarLink .hDgDGI path,
 .icon > svg,
 .x-searchInput-searchInputIconContainer path,
 .show-episodeBlock-playerActions svg, 
@@ -541,7 +541,7 @@ button.switch {
 }
 
 .main-navBar-navBarLinkActive > .icon,
-.main-navBar-navBarLinkActive .gSLhUO {
+.main-navBar-navBarLinkActive .hDgDGI {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
@@ -1311,7 +1311,7 @@ option {
 }
 
 .main-connectBar-connectBar .icon, 
-.main-connectBar-connectBar .gSLhUO {
+.main-connectBar-connectBar .hDgDGI {
   margin: 0px;
   margin-right: 8px;
 }
