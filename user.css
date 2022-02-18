@@ -99,11 +99,6 @@
 
 /* cards */
 
-.main-shelf-shelfGrid,
-.view-homeShortcutsGrid-grid {
-  overflow: visible;
-}
-
 .main-cardImage-image,
 .main-cardImage-imageWrapper,
 .OALAQFKvC7XQOVYpklB4 img {
@@ -186,7 +181,6 @@
 .main-entityHeader-title {
   font-size: unset;
   font-weight: 500;
-  overflow: visible !important;
 }
 
 h1,
@@ -200,7 +194,6 @@ h3,
 .x-searchResultsTracks-title {
   font-weight: 500;
   letter-spacing: 0.1px !important;
-  overflow: visible !important;
   margin-bottom: 4px;
   white-space: normal;
 }
@@ -537,7 +530,6 @@ button.switch {
 
 .main-navBar-navBarLink span,
 .main-createPlaylistButton-text {
-  overflow: visible;
   font-size: 10.5px !important;
   margin: auto;
   display: block;
@@ -1217,10 +1209,6 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
   max-width: 190px;
 }
 
-.profile-userOverview-section .main-shelf-shelfGrid {
-  overflow: hidden;
-}
-
 /* settings */
 
 .main-dropDown-dropDown,
@@ -1362,7 +1350,6 @@ option {
 
 .prog-tooltip {
   width: 140px;
-  overflow: hidden;
   display: none;
 }
 
