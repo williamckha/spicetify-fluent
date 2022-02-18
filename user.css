@@ -13,6 +13,7 @@
 
 * {
   font-family: 'Segoe UI', sans-serif !important;
+  line-height: normal;
   box-shadow: none !important;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
