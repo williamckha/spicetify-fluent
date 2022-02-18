@@ -821,15 +821,6 @@ button.switch {
   color: var(--spice-text);
 }
 
-.main-actionBar-ActionBarRow>button:not(:first-child),
-.x-actionBar-ActionButtonsRow>div>button {
-  color: var(--spice-text);
-}
-
-.main-actionBar-ActionBarRow span {
-  color: var(--spice-text) !important;
-}
-
 .fIDrcz, .ghlXvf {
   fill: var(--spice-text);
 }
