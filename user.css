@@ -665,6 +665,11 @@ button.switch {
   padding: 8px;
   right: -17px;
   top: -8px;
+  transform: rotate(-90deg);
+}
+
+.main-rootlist-expandArrow.qAAhQw9dXNB7DbPgDDxy {
+  transform: rotate(0deg);
 }
 
 .main-rootlist-statusIcons {
