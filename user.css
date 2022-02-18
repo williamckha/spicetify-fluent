@@ -658,12 +658,6 @@ button.switch {
   top: -4px;
 }
 
-.main-rootlist-rootlistItemLinkActive~.main-rootlist-expandArrow:focus,
-.main-rootlist-rootlistItemLinkActive~.main-rootlist-expandArrow:hover,
-.main-rootlist-rootlistItemLinkActive~.main-rootlist-expandArrow {
-  color: var(--spice-text);
-}
-
 .main-rootlist-expandArrow {
   color: var(--spice-text);
   position: relative;
@@ -671,11 +665,6 @@ button.switch {
   padding: 8px;
   right: -17px;
   top: -1px;
-}
-
-.main-rootlist-expandArrowRotated {
-  right: -5px !important;
-  top: 14px !important;
 }
 
 .main-rootlist-statusIcons {
