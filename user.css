@@ -389,7 +389,7 @@ h3,
   width: 49px;
   min-height: 48px;
   margin: auto;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   justify-content: center;
 }
 
@@ -644,8 +644,11 @@ button.switch {
   background-color: var(--spice-card);
   background-size: cover;
   border-radius: var(--border-radius-2);
-  margin-bottom: 14px;
   cursor: pointer;
+}
+
+.main-rootlist-rootlistItemLink:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 .main-rootlist-textWrapper {
