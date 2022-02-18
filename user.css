@@ -172,6 +172,7 @@
   width: 100vw !important;
   grid-area: none;
   z-index: 4 !important;
+  background: var(--spice-sidebar);
 }
 
 .main-topBar-container {
