@@ -1655,6 +1655,13 @@ option {
 }
 
 
+/* error content */
+
+.main-pageErrorTemplate-errorBody svg {
+  margin: 0;
+}
+
+
 /* spicetify */
 
 #spicetify-sidebar-config {
