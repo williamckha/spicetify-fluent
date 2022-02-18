@@ -661,10 +661,10 @@ button.switch {
 .main-rootlist-expandArrow {
   color: var(--spice-text);
   position: relative;
-  margin-inline-start: -32px;
-  padding: 8px;
-  right: -17px;
-  top: -8px;
+  margin-inline-start: -16px;
+  right: -6px;
+  top: 16px;
+  height: 16px;
   transform: rotate(-90deg);
 }
 
