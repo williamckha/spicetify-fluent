@@ -131,7 +131,6 @@
 }
 
 .main-tag-container {
-  font-family: "Segoe UI", sans-serif !important;
   font-weight: 400;
   font-size: 10px;
   color: #463d3d !important;
@@ -186,7 +185,6 @@
 
 .main-entityHeader-title {
   font-size: unset;
-  font-family: 'Segoe UI', sans-serif !important;
   font-weight: 500;
   overflow: visible !important;
 }
@@ -200,7 +198,6 @@ h3,
 .main-type-bass,
 .main-cardHeader-text.main-type-alto,
 .x-searchResultsTracks-title {
-  font-family: 'Segoe UI', sans-serif !important;
   font-weight: 500;
   letter-spacing: 0.1px !important;
   overflow: visible !important;
@@ -421,7 +418,6 @@ h3,
 
 
 .main-type-balladBold {
-  font-family: 'Segoe UI', sans-serif !important;
   font-weight: 500;
   letter-spacing: 0.2px;
 }
@@ -475,7 +471,6 @@ button.switch {
 .main-buttons-button,
 .show-followButton-button {
   background-color: var(--spice-card);
-  font-family: "Segoe UI", sans-serif;
   font-weight: normal;
   font-size: 15px;
   letter-spacing: 0px;
@@ -574,7 +569,6 @@ button.switch {
 }
 
 .main-type-mestoBold {
-  font-family: 'Segoe UI', sans-serif !important;
   font-weight: normal !important;
 }
 
@@ -938,7 +932,6 @@ button.switch {
 .main-entityHeader-topbarTitle,
 .main-topBar-topbarTitle {
   font-size: 16px;
-  font-family: 'Segoe UI', sans-serif !important;
   font-weight: 400;
   padding-left: 4px;
   position: relative;
