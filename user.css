@@ -638,6 +638,7 @@ button.switch {
   background-size: cover;
   border-radius: var(--border-radius-2);
   margin-bottom: 14px;
+  cursor: pointer;
 }
 
 .main-rootlist-textWrapper {
