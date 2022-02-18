@@ -614,6 +614,13 @@ button.switch {
 }
 
 
+/* sidebar resizer */
+
+.LayoutResizer__resize-bar {
+  display: none;
+}
+
+
 /* playlist sidebar */
 
 .main-rootlist-rootlist .os-content {
