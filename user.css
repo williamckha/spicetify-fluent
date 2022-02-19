@@ -1639,6 +1639,17 @@ option {
 }
 
 
+/* error content */
+
+.main-pageErrorTemplate-errorBody {
+  min-height: calc((100vh - 64px) - 105px);
+}
+
+.main-pageErrorTemplate-errorBody svg {
+  margin: 0;
+}
+
+
 /* spicetify */
 
 #spicetify-sidebar-config {
