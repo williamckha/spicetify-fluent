@@ -47,6 +47,13 @@
   max-width: 100vw !important; 
 }
 
+.main-view-container__scroll-node-child {
+  border: 1px solid var(--spice-player-border);
+  border-top-left-radius: var(--border-radius-1);
+  outline: thick solid var(--spice-sidebar);
+  overflow: hidden;
+}
+
 .main-home-homeHeader,
 .main-actionBarBackground-background {
   background-image: none;
