@@ -643,6 +643,7 @@ button.switch {
   --left-sidebar-item-height: 48px;
   --left-sidebar-padding-left: 18px;
   --left-sidebar-padding-right: 18px;
+  padding-bottom: 120px;  /* don't go below player controls */
 }
 
 .main-rootlist-rootlistItemLink {
