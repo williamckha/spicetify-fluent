@@ -1062,6 +1062,11 @@ a[class*='-tabBar-headerItemLink']:active {
   border-radius: var(--border-radius-1);
 }
 
+/* playlist search box icon fix */
+
+._bjbHn5TABOW2s5LsEGX {
+  position: fixed !important;
+}
 
 /* error */
 
@@ -1104,10 +1109,6 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .profile-userEditDetails-textElement:focus,
 .playlist-inlineSearchBox-filterInput:focus {
   border: 1px solid var(--spice-button-active) !important;
-}
-
-.JzZyf6OGCGtdscOZGt8Y:focus-within path {
-  display: none !important;
 }
 
 .playlist-inlineSearchBox-filterInput {
