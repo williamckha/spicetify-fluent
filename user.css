@@ -986,7 +986,7 @@ a[class*='-tabBar-headerItemLink']:active {
 .dIwMadpRrW1PwEwEeAbN,
 .G9iUss4eOSpJyn2VBzsS {
   background-color: var(--spice-card);
-  color: var(--spice-text);
+  color: var(--spice-text) !important;
   border: 1px solid var(--spice-light-border);
   border-radius: var(--border-radius-2) !important;
   padding-right: 0px;
