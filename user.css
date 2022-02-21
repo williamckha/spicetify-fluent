@@ -1065,8 +1065,15 @@ a[class*='-tabBar-headerItemLink']:active {
 /* playlist search box icon fix */
 
 ._bjbHn5TABOW2s5LsEGX {
-  position: fixed !important;
+  flex: 0 0 auto !important;
 }
+
+.EsqEJ_NPrHsPkTbX4FW8 {
+  flex: 0 0 auto !important;
+  position: fixed !important;
+  margin-left: 152px !important;
+}
+
 
 /* error */
 
