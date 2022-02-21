@@ -1106,6 +1106,10 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
   border: 1px solid var(--spice-button-active) !important;
 }
 
+.JzZyf6OGCGtdscOZGt8Y:focus-within path {
+  display: none !important;
+}
+
 .playlist-inlineSearchBox-filterInput {
   border: 1px solid var(--spice-card);
 }
