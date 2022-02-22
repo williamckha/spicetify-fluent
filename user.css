@@ -986,7 +986,7 @@ a[class*='-tabBar-headerItemLink']:active {
 .dIwMadpRrW1PwEwEeAbN,
 .G9iUss4eOSpJyn2VBzsS {
   background-color: var(--spice-card);
-  color: var(--spice-text);
+  color: var(--spice-text) !important;
   border: 1px solid var(--spice-light-border);
   border-radius: var(--border-radius-2) !important;
   padding-right: 0px;
@@ -1060,6 +1060,18 @@ a[class*='-tabBar-headerItemLink']:active {
 .x-searchResultsTracks-root .main-gridContainer-gridContainer {
   background-color: var(--spice-card);
   border-radius: var(--border-radius-1);
+}
+
+/* playlist search box icon fix */
+
+._bjbHn5TABOW2s5LsEGX {
+  flex: 0 0 auto !important;
+}
+
+.EsqEJ_NPrHsPkTbX4FW8 {
+  flex: 0 0 auto !important;
+  position: fixed !important;
+  margin-left: 152px !important;
 }
 
 
