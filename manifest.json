@@ -1,7 +1,7 @@
 {
     "name": "Fluent",
     "description": "Spicetify theme inspired by Microsoft's Fluent Design",
-    "preview": "https://github.com/williamckha/spicetify-fluent/raw/master/screenshots/dark-1.png",
+    "preview": "https://raw.githubusercontent.com/williamckha/spicetify-fluent/master/screenshots/dark-1.png",
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",
