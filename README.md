@@ -1,71 +1,76 @@
-<div align=center><h1>Fluent</h1>  
+<div align="center">
+  <h1>Fluent</h1>
 
-  [Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Windows 11 UI and Microsoft's Fluent Design  
-
+  [Spicetify](https://github.com/khanhas/spicetify-cli) theme inspired by Microsoft's [Fluent Design System](https://www.microsoft.com/design/fluent).
 </div>
 
+![dark-1](screenshots/dark-1.png)
+
 <br>
 
-![dark-1](screenshots/dark-1.png)  
-<br>
-![dark-2](screenshots/dark-2.png)  
-<br>
-![light-1](screenshots/light-1.png)  
+![dark-2](screenshots/dark-2.png)
+
 <br>
 
-## About
+![light-1](screenshots/light-1.png)
 
+## Dependencies
 
-Requires Segoe UI font.
+- [Spicetify](https://github.com/khanhas/spicetify-cli) version 2.7.0 or newer, latest version always recommended.
+- [Segoe UI](https://en.wikipedia.org/wiki/Segoe#Segoe_UI) font family, comes pre-installed on Windows Vista and newer.
+  Segoe UI versions older than 5.37 (older than Windows 8.0) are not officially supported but may work.
 
-Based off [Ziro](https://github.com/schnensch0/ziro) theme by [schnensch](https://github.com/schnensch0)  
-[Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) by Microsoft Corporation  
-[Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) by Phosphor Icons
+## Installation
 
-## Install
-Make sure spicetify >= v2.7.0 is installed. Run these commands:
+### Windows (PowerShell)
 
-### Windows
-In **Powershell**:
 ```powershell
-cd "$(spicetify -c | Split-Path)\Themes"
-git clone https://github.com/williamckha/spicetify-fluent Fluent
-Copy-Item Fluent\fluent.js ..\Extensions
-spicetify config extensions fluent.js
-spicetify config current_theme Fluent color_scheme dark
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-spicetify apply
+Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/williamckha/spicetify-fluent/master/install.ps1" | Invoke-Expression
 ```
 
-### macOS and Linux
-In **Bash**:
+### Linux/macOS (Bash)
+
 ```bash
-cd "$(dirname "$(spicetify -c)")/Themes"
-git clone https://github.com/williamckha/spicetify-fluent Fluent
-mkdir -p ../Extensions
-cp Fluent/fluent.js ../Extensions/.
-spicetify config extensions fluent.js
-spicetify config current_theme Fluent color_scheme dark
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-spicetify apply
+curl -fsSL https://raw.githubusercontent.com/williamckha/spicetify-fluent/master/install.sh | sh
 ```
+
+### Spicetify Marketplace
+
+You may alternatively install spicetify-fluent from within the Spicetify Marketplace.  
+Simply install the [spicetify-marketplace](https://github.com/spicetify/spicetify-marketplace) by following it's
+installation instructions and look for and install the theme from within the Marketplace Button.
 
 ### Important
-For the sidebar playlists to show properly, ensure that these two lines are added in the Patch section of your config-xpui.ini file:
+
+For the sidebar playlists to show properly, ensure that these two lines are added in the Patch section of your `config-xpui.ini` file:
+
 ```ini
 [Patch]
 xpui.js_find_8008 = ,(\w+=)32,
 xpui.js_repl_8008 = ,${1}56,
 ```
 
-
 ## Customization
-Three color schemes are available: `light`, `dark` or `dracula`. Change scheme with commands:
+
+Four color schemes are available: `light`, `dark`, `dracula`, and `comfy`. Change scheme with commands:
+
 ```
 spicetify config color_scheme <scheme_name>
 spicetify apply
 ```
+
 ### More Options
+
 - You can change the accent color in the theme folder's color.ini file.  
 - If you are using Windows, you can hide the window controls by adding the flag `--transparent-window-controls` after Spotify.exe in your Spotify shortcut.  
 - Use "Sidebar config" in the Spotify profile menu to hide/unhide and stick/unstick the Liked Songs and My Episodes icons in the sidebar.
+
+## Credits
+
+Based off [Ziro](https://github.com/schnensch0/ziro) theme by [schnensch](https://github.com/schnensch0)  
+[Fluent UI System Icons](https://github.com/microsoft/fluentui-system-icons) by Microsoft Corporation  
+[Phosphor Icons](https://github.com/phosphor-icons/phosphor-icons) by Phosphor Icons
+
+## License
+
+[MIT License](LICENSE)
