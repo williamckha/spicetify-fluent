@@ -5,6 +5,7 @@
     "readme": "README.md",
     "usercss": "user.css",
     "schemes": "color.ini",
+    "include": ["https://raw.githubusercontent.com/williamckha/spicetify-fluent/master/fluent.js"],
     "branch": "master",
     "authors": [
         {
