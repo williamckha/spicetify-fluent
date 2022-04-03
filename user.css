@@ -799,6 +799,7 @@ button.switch {
 }
 
 .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
+  background: none;
   border-bottom: none;
 }
 
