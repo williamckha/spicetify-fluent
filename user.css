@@ -800,6 +800,8 @@ button.switch {
 
 .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
   border-bottom: none;
+  background: none;
+  padding: 0;
 }
 
 .main-trackList-statusChangeUp {
