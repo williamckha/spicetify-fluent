@@ -801,6 +801,7 @@ button.switch {
 .main-trackList-trackListHeaderStuck.main-trackList-trackListHeader {
   border-bottom: none;
   background: none;
+  margin: auto;
   padding: 0;
 }
 
