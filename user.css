@@ -43,6 +43,10 @@
   display: none;
 }
 
+.main-trackList-playsHeader {
+  margin-left: -15px;
+}
+
 .contentSpacing { 
   max-width: 100vw !important; 
 }
