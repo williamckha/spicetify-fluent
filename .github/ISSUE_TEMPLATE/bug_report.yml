@@ -1,0 +1,47 @@
+name: Bug report
+description: Report errors or unexpected behavior
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: 🔍 Is there already an issue for your problem?
+      description: Please make sure you are not creating an already submitted <a href="https://github.com/williamckha/spicetify-fluent/issues">Issue</a>. Check closed issues as well, because your issue may have already been fixed.
+      options:
+        - label: I have checked older issues, open and closed
+          required: true
+  - type: textarea
+    attributes:
+      label: ℹ Environment / Computer Info
+      description: |
+        Please provide the details of the system Spicetify Fluent is running on.
+        Copy the Spotify version from the `⋯` button, File, Help, and click the Copy to Clipboard button.
+        Any extra information on how or when you installed Fluent would be advised.
+      value: |
+        - Spotify version: 
+        - Spicetify version: 
+        - Fluent installation method: (e.g., GitHub Readme, Spicetify Marketplace)
+      placeholder: |
+        - Spotify version: Spotify for macOS (Apple Silicon) 1.1.77.643.g3c4c6fc6
+        - Spicetify version: 2.8.5
+        - Fluent installation method: Spicetify Marketplace
+      render: Markdown
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📝 Description
+      description: |
+        List steps to reproduce the error and details on what happens and what you expected to happen.
+      placeholder: |
+        1. Please number your steps like so.
+        2. This helps readability of your instructions.
+
+        Feel free to write down additional notes you may want us to know.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 📸 Screenshots
+      description: Place any screenshots of the issue here if needed
+    validations:
+      required: false
