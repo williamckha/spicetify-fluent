@@ -510,10 +510,63 @@ button.switch {
 
 /* sidebar */
 
+.Root__nav-bar,
+.main-navBar-navBarItem,
+.main-rootlist-rootlist,
+.main-rootlist-rootlistItem,
+.main-rootlist-textWrapper,
+div.GlueDropTarget.personal-library {
+  transition: all 0.2s ease;
+}
 .Root__nav-bar {
+  position: absolute;
   z-index: 1 !important;
-  max-width: 85px !important;
+  max-width: 300px !important;
+  width: 85px;
   height: calc(100% + 107px);
+}
+.Root__nav-bar:hover {
+  width: 300px;
+}
+.main-rootlist-rootlistItem {
+  padding-left: 15% !important;
+}
+.Root__nav-bar:hover .main-rootlist-rootlistItem {
+  padding-left: 0px !important;
+}
+.main-rootlist-rootlistItemLink:link,
+.main-rootlist-rootlistItemLink:visited,
+.main-rootlist-rootlistPlaylistHeader {
+  background-position-y: center;
+}
+/* .main-rootlist-rootlistItemLink {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+.Root__nav-bar:hover .main-rootlist-textWrapper {
+  display: flex;
+  flex: 1;
+  padding: 2%;
+  background: rgba(0,0,0,0.4);
+  font-weight: 700;
+  -webkit-text-stroke: 0.3px var(--spice-accent);
+}
+.Root__nav-bar:not(:hover) .main-rootlist-rootlistItemLink {
+  max-width: 50px;
+}
+.Root__nav-bar:not(:hover) div.GlueDropTarget.personal-library>* {
+  width: 50px;
+}
+.Root__nav-bar:hover .main-rootlist-rootlist,
+.Root__nav-bar:hover .main-navBar-navBarItem,
+.Root__nav-bar:hover div.GlueDropTarget.personal-library>* {
+  width: 300px !important;
+}
+.Root__nav-bar:hover div.GlueDropTarget.personal-library>.main-collectionLinkButton-collectionLinkButton {
+  margin-left: 10px;
+  width: 265px !important;
 }
 
 .main-navBar-navBar {
@@ -632,6 +685,10 @@ button.switch {
   display: none;
 }
 
+.os-content {
+  margin-left: 6%;
+  width: 94% !important;
+}
 
 /* playlist sidebar */
 
@@ -1112,6 +1169,13 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .profile-userEditDetails-nameInput,
 .profile-userEditDetails-textElement:focus {
   background: var(--spice-card) !important;
+}
+
+.main-playlistEditDetailsModal-titleInput:hover,
+.main-playlistEditDetailsModal-descriptionTextarea:hover,
+.profile-userEditDetails-textElement:hover,
+.playlist-inlineSearchBox-filterInput:hover {
+  border: 1px solid var(--spice-button-hover) !important;
 }
 
 .main-playlistEditDetailsModal-titleInput:focus,
