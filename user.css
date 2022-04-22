@@ -43,8 +43,8 @@
   display: none;
 }
 
-.contentSpacing { 
-  max-width: 100vw !important; 
+.contentSpacing {
+  max-width: 100vw !important;
 }
 
 .main-home-homeHeader,
@@ -298,52 +298,52 @@ h3,
 }
 
 .main-navBar-navBarLink .gSLhUO path,
-.icon > svg,
+.icon>svg,
 .x-searchInput-searchInputIconContainer path,
-.show-episodeBlock-playerActions svg, 
-.main-playButton-PlayButton polygon, 
+.show-episodeBlock-playerActions svg,
+.main-playButton-PlayButton polygon,
 .main-playButton-PlayButton rect {
   display: none !important;
 }
 
 .home-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_home_24_regular.svg');
-  background-color: var(--spice-subtext) !important; 
+  background-color: var(--spice-subtext) !important;
 }
 
 .home-active-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_home_24_filled.svg');
-  background-color: var(--spice-accent) !important; 
+  background-color: var(--spice-accent) !important;
 }
 
 .search-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_search_24_regular.svg');
-  background-color: var(--spice-subtext) !important; 
+  background-color: var(--spice-subtext) !important;
 }
 
 .search-active-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_search_24_filled.svg');
-  background-color: var(--spice-accent) !important; 
+  background-color: var(--spice-accent) !important;
 }
 
 .collection-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_library_24_regular.svg');
-  background-color: var(--spice-subtext) !important; 
+  background-color: var(--spice-subtext) !important;
 }
 
 .collection-active-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_library_24_filled.svg');
-  background-color: var(--spice-accent) !important; 
+  background-color: var(--spice-accent) !important;
 }
 
-.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-icon {
+.main-navBar-navBarLink[href="/lyrics-plus"]>.collection-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_regular.svg');
-  background-color: var(--spice-subtext) !important; 
+  background-color: var(--spice-subtext) !important;
 }
 
-.main-navBar-navBarLink[href="/lyrics-plus"] > .collection-active-icon {
+.main-navBar-navBarLink[href="/lyrics-plus"]>.collection-active-icon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_slide_text_24_filled.svg');
-  background-color: var(--spice-accent) !important; 
+  background-color: var(--spice-accent) !important;
 }
 
 .home-icon path,
@@ -362,7 +362,7 @@ h3,
   margin: auto;
   height: 24px !important;
   width: 24px !important;
-  display: block !important; 
+  display: block !important;
   margin-top: 20px !important;
   margin-bottom: 20px !important;
 }
@@ -376,7 +376,8 @@ h3,
   display: block !important;
 }
 
-.main-createPlaylistButton-createPlaylistIcon > svg, .main-createPlaylistButton-text {
+.main-createPlaylistButton-createPlaylistIcon>svg,
+.main-createPlaylistButton-text {
   display: none !important;
 }
 
@@ -389,7 +390,7 @@ h3,
 }
 
 .main-collectionLinkButton-collectionLinkButton[href="/collection/tracks"] {
-  background: linear-gradient(135deg,#450af5,#c4efd9) !important;
+  background: linear-gradient(135deg, #450af5, #c4efd9) !important;
 }
 
 .main-collectionLinkButton-collectionLinkButton[href="/collection/episodes"] {
@@ -508,6 +509,10 @@ button.switch {
   fill: var(--spice-text) !important;
 }
 
+.Root__top-container {
+  overflow: hidden;
+}
+
 /* sidebar */
 
 .Root__nav-bar,
@@ -576,7 +581,7 @@ div.GlueDropTarget.personal-library {
 }
 
 /* Rounded top-left corner + left/top border for main content window */
-.main-navBar-navBar:before{
+.main-navBar-navBar:before {
   content: '';
   position: absolute;
   left: 100%;
@@ -622,9 +627,9 @@ div.GlueDropTarget.personal-library {
   display: none;
 }
 
-.main-navBar-navBarLinkActive > .icon,
+.main-navBar-navBarLinkActive>.icon,
 .main-navBar-navBarLinkActive .gSLhUO,
-.main-navBar-navBarLinkActive > .hDgDGI {
+.main-navBar-navBarLinkActive>.hDgDGI {
   position: relative;
   top: 50%;
   transform: translate(0, -50%);
@@ -1042,7 +1047,7 @@ a[class*='-tabBar-headerItemLink']:active {
 
 /* search */
 
-.x-searchInput-searchInputInput, 
+.x-searchInput-searchInputInput,
 .dIwMadpRrW1PwEwEeAbN,
 .G9iUss4eOSpJyn2VBzsS {
   background-color: var(--spice-card);
@@ -1054,7 +1059,7 @@ a[class*='-tabBar-headerItemLink']:active {
   transition: background-color ease-in 167ms;
 }
 
-.x-searchInput-searchInputInput:focus, 
+.x-searchInput-searchInputInput:focus,
 .dIwMadpRrW1PwEwEeAbN:focus,
 .G9iUss4eOSpJyn2VBzsS:focus {
   background-color: var(--spice-main);
@@ -1066,7 +1071,7 @@ a[class*='-tabBar-headerItemLink']:active {
   width: 40vw;
 }
 
-.x-searchInput-searchInputIconContainer, 
+.x-searchInput-searchInputIconContainer,
 .t2K4_iLmAyDtH7mcT5Wy {
   flex-direction: row-reverse;
 }
@@ -1077,7 +1082,7 @@ a[class*='-tabBar-headerItemLink']:active {
 
 .x-searchInput-searchInputSearchIcon {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_search_16_regular.svg');
-  background-color: var(--spice-subtext) !important; 
+  background-color: var(--spice-subtext) !important;
   flex: 0;
   transform: scaleX(-1);
   height: 16px;
@@ -1094,14 +1099,14 @@ a[class*='-tabBar-headerItemLink']:active {
   height: 20px;
 }
 
-.x-searchInput-searchInputClearButton path, 
+.x-searchInput-searchInputClearButton path,
 .g7ggq46CbOli19ZxJlQe .BDcKgSW_ys9_Hj2DwDBW path {
   display: block !important;
   stroke: var(--spice-subtext) !important;
   stroke-width: 1.3px;
 }
 
-.x-searchInput-searchInputClearButton svg, 
+.x-searchInput-searchInputClearButton svg,
 .g7ggq46CbOli19ZxJlQe .BDcKgSW_ys9_Hj2DwDBW svg {
   padding: 3px;
 }
@@ -1405,7 +1410,7 @@ option {
   border-bottom: none !important;
 }
 
-.main-connectBar-connectBar .icon, 
+.main-connectBar-connectBar .icon,
 .main-connectBar-connectBar .hDgDGI {
   margin: 0px;
   margin-right: 8px;
@@ -1427,7 +1432,7 @@ option {
 }
 
 .gqeP9Y0_y6DLm4CD_m3Q {
-  border: 0px; 
+  border: 0px;
   background: none;
 }
 
@@ -1505,10 +1510,10 @@ option {
 .main-coverSlotExpanded-container,
 .T6whS8zYB9fG_tIdTg6m {
   position: fixed;
-  top: calc(100% - 320px);
-  left: calc(100% - 220px);
-  width: 200px;
-  height: 200px;
+  top: calc(100% - 22.5em);
+  right: 16px;
+  width: 15em;
+  height: 15em;
   visibility: hidden;
   transform-origin: center;
   box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.5) !important;
@@ -1560,10 +1565,10 @@ option {
 
 .main-coverSlotCollapsed-container[aria-hidden="true"],
 .zcsxy3fvYCmZGcE7VzW7[aria-hidden="true"] {
-  left: calc(100vw - 178px);
-  top: -245px;
-  width: 200px;
-  height: 200px;
+  top: calc(100% - 19.9em);
+  left: calc(100vw - 13.4em);
+  width: 15em;
+  height: 15em;
   visibility: hidden;
   box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.5) !important;
   animation: 1s coverExpandedOut;
@@ -1577,8 +1582,12 @@ option {
 
 .main-coverSlotCollapsed-container[aria-hidden="true"] .cover-art .cover-art-image,
 .main-nowPlayingWidget-coverExpanded .zcsxy3fvYCmZGcE7VzW7 .cover-art .cover-art-image {
-  width: 200px;
-  height: 200px;
+  width: 15em;
+  height: 15em;
+}
+
+.KKJUKKP3FyKKKdRjWDVj {
+  margin: 0 14px 0 4.5em !important;
 }
 
 .CoverSlotExpanded__actionButton,
@@ -1650,42 +1659,47 @@ option {
 
 .main-skipBackButton-button {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_previous_24_filled.svg');
-  background-color: var(--spice-text) !important; 
+  background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
-.j4TkiByCgwfJawuHfzsd { /* Skip back 15 sec */
+.j4TkiByCgwfJawuHfzsd {
+  /* Skip back 15 sec */
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_skip_backward_15_24_filled.svg');
-  background-color: var(--spice-text) !important; 
+  background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
-.Kvxb6GUtWNNo5mFeKfMn { /* Skip forward 15 sec */
+.Kvxb6GUtWNNo5mFeKfMn {
+  /* Skip forward 15 sec */
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_skip_forward_15_24_filled.svg');
-  background-color: var(--spice-text) !important; 
+  background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
-.Y0lBew4O9_Ma84_Lnnsq { /* Speed icon for podcasts */
+.Y0lBew4O9_Ma84_Lnnsq {
+  /* Speed icon for podcasts */
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_top_speed_24_filled.svg');
-  background-color: var(--spice-text) !important; 
+  background-color: var(--spice-text) !important;
   height: 22px !important;
 }
 
 /* Disabled */
-.main-repeatButton-button[aria-checked="false"]{
+.main-repeatButton-button[aria-checked="false"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
   background-color: var(--spice-subtext) !important;
-  height: 22px !important; 
+  height: 22px !important;
 }
+
 /* Repeat one */
-.main-repeatButton-button[aria-checked="mixed"]{
+.main-repeatButton-button[aria-checked="mixed"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg') !important;
   background-color: var(--spice-text) !important;
   height: 22px !important;
 }
+
 /* Repeat all */
-.main-repeatButton-button[aria-checked="true"]{
+.main-repeatButton-button[aria-checked="true"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
   background-color: var(--spice-text) !important;
   height: 22px !important;
@@ -1732,7 +1746,7 @@ option {
 
 .main-playButton-button,
 .main-playButton-PlayButton,
-.main-trackList-rowPlayPauseButton{
+.main-trackList-rowPlayPauseButton {
   background-color: var(--spice-text) !important;
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
 }
@@ -1756,7 +1770,7 @@ option {
   top: -60px !important;
 }
 
-#spicetify-show-list >* {
+#spicetify-show-list>* {
   padding: 0px;
 }
 
