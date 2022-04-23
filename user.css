@@ -47,6 +47,11 @@
   max-width: 100vw !important;
 }
 
+.xXj7eFQ8SoDKYXy6L3E1 {
+  max-width: 100vw !important;
+  width: 100vw !important;
+}
+
 .main-home-homeHeader,
 .main-actionBarBackground-background {
   background-image: none;
@@ -297,6 +302,14 @@ h3,
   display: block;
 }
 
+.main-navBar-navBarLink,
+.main-navBar-navBarLinkActive,
+.main-navBar-navBarLinkActive:hover,
+.main-navBar-navBarLinkActive:active,
+.main-navBar-navBarLinkActive:focus {
+  text-align: center;
+}
+
 .main-navBar-navBarLink .gSLhUO path,
 .icon>svg,
 .x-searchInput-searchInputIconContainer path,
@@ -379,6 +392,12 @@ h3,
 .main-createPlaylistButton-createPlaylistIcon>svg,
 .main-createPlaylistButton-text {
   display: none !important;
+}
+
+.Root__nav-bar:hover .main-createPlaylistButton-button:not(.O94OWJH9KDJ403Gt84D9),
+.main-createPlaylistButton-button:not(.O94OWJH9KDJ403Gt84D9):focus,
+.main-createPlaylistButton-button:not(.O94OWJH9KDJ403Gt84D9):hover {
+  margin-left: -0.5em;
 }
 
 .main-collectionLinkButton-collectionLinkButton {
@@ -681,6 +700,16 @@ div.GlueDropTarget.personal-library {
 
 .main-navBar-navBarLink {
   transition: background-color ease-out 167ms;
+}
+
+.main-navBar-navBarItem .main-navBar-navBarLinkActive .collection-active-icon,
+.main-navBar-navBarItem .main-navBar-navBarLinkActive .home-active-icon,
+.main-navBar-navBarItem .main-navBar-navBarLinkActive .search-active-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
 
