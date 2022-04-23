@@ -753,6 +753,8 @@ div.GlueDropTarget.personal-library {
 
 .main-rootlist-rootlistItemLink:not(:last-child) {
   margin-bottom: 8px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .main-rootlist-textWrapper {
