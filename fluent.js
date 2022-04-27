@@ -125,4 +125,27 @@
       }, 10)
     })
   }, 10);
+
+  waitForElement(
+    [
+      ".spotify__container--is-desktop",
+      ".main-navBar-entryPoints",
+      ".main-rootlist-rootlist",
+    ],
+    () => {
+      const navbarTopItems = document.querySelector(
+        ".spotify__container--is-desktop:not(.fullscreen) .main-navBar-entryPoints"
+      );
+      const navbarPlaylists = document.querySelector(".main-rootlist-rootlist");
+
+      navbarPlaylists.addEventListener("mouseover", () => {
+        navbarTopItems.style.height = "4.75em";
+        navbarTopItems.style.overflow = "hidden";
+      });
+      navbarPlaylists.addEventListener("mouseout", () => {
+        navbarTopItems.style.height = "";
+        navbarTopItems.style.overflow = "";
+      });
+    }
+  );
 })();

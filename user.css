@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/product-sans');
+
 :root {
   --border-radius-1: 8px;
   --border-radius-2: 4px;
@@ -12,7 +14,7 @@
 }
 
 * {
-  font-family: 'Segoe UI', sans-serif !important;
+  font-family: 'Product Sans', 'Segoe UI', sans-serif !important;
   line-height: normal;
   box-shadow: none !important;
   -webkit-mask-repeat: no-repeat;
@@ -1264,7 +1266,6 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
 .main-deleteFolderDialog-buttonContainer>:last-child {
   background-color: var(--spice-notification-error);
 }
-
 
 /* friend activity */
 .spotify__container--is-desktop.spotify__os--is-windows.buddyfeed-visible .main-topBar-container {
