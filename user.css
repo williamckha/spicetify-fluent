@@ -256,6 +256,15 @@ h3,
 
 
 /* menus */
+.GlueDropTarget.GlueDropTarget--tracks>button>.Bwc9jlVb7HWs8JJupnBB,
+.GlueDropTarget.GlueDropTarget--tracks>a>.bFQ9NOIn1bDs8tTH0ebQ {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.q3ABXYJT9JZIzXOOtVuO {
+  border-radius: 4px;
+}
 
 .main-contextMenu-menuItemButton,
 .main-userWidget-dropDownMenuItemButton {
@@ -401,6 +410,13 @@ h3,
 .main-createPlaylistButton-button:not(.O94OWJH9KDJ403Gt84D9):hover {
   margin-left: -0.5em;
 }
+
+/* Playlist on navbar */
+.Root__nav-bar:hover .EY6S7vlkxB7SF_OjjF_Y,
+.Root__nav-bar:hover .LKgm9fCDTO7wqig_5U1q {
+  width: 300px;
+}
+/* Playlist on navbar */
 
 .main-collectionLinkButton-collectionLinkButton {
   width: 49px;
@@ -1774,13 +1790,45 @@ option {
 }
 
 
-/* play buttons */
-
-.main-playButton-button,
-.main-playButton-PlayButton,
-.main-trackList-rowPlayPauseButton {
+/* Player buttons */
+button.vnCew8qzJq3cVGlYFXRI,
+button.KVKoQ3u4JpKTvSSFtd6J,
+button.fn72ari9aEmKo4JcwteT,
+button.mnipjT4SLDMgwiDCEnRC,
+button.Vz6yjzttS0YlLcwrkoUR {
   background-color: var(--spice-text) !important;
+}
+/* play button */
+button.vnCew8qzJq3cVGlYFXRI[aria-label="Play"] {
   -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg');
+}
+button.vnCew8qzJq3cVGlYFXRI[aria-label="Pause"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_pause_16_filled.svg');
+}
+/* shuffle button */
+button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Enable shuffle"] {
+  -webkit-mask-image: url('./fluentui-system-icons/shuffle.svg');
+}
+button.KVKoQ3u4JpKTvSSFtd6J[aria-label="Disable shuffle"] {
+  -webkit-mask-image: url('./fluentui-system-icons/shuffle-enabled.svg');
+}
+/* previous button */
+button.fn72ari9aEmKo4JcwteT {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_previous_24_filled.svg');
+}
+/* next button */
+button.mnipjT4SLDMgwiDCEnRC {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_next_24_filled.svg');
+}
+/* repeat button */
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_off_24_regular.svg');
+}
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Enable repeat one"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_24_filled.svg');
+}
+button.Vz6yjzttS0YlLcwrkoUR[aria-label="Disable repeat"] {
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_arrow_repeat_all_once_24_filled.svg');
 }
 
 

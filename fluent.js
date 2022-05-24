@@ -137,7 +137,6 @@
         ".spotify__container--is-desktop:not(.fullscreen) .main-navBar-entryPoints"
       );
       const navbarPlaylists = document.querySelector(".main-rootlist-rootlist");
-
       navbarPlaylists.addEventListener("mouseover", () => {
         navbarTopItems.style.height = "4.75em";
         navbarTopItems.style.overflow = "hidden";
@@ -146,6 +145,27 @@
         navbarTopItems.style.height = "";
         navbarTopItems.style.overflow = "";
       });
+    }
+  );
+
+  // Playlist translateY recalculation
+  waitForElement([".JUa6JJNj7R_Y3i4P8YUX"], () => {
+    const element = document.querySelector(".JUa6JJNj7R_Y3i4P8YUX > div:nth-child(2)");
+    const style = window.getComputedStyle(element);
+    const matrix = new WebKitCSSMatrix(style.transform);
+    element.style.transform = `translateY(${matrix[5] - 200})`;
+  })
+
+  // Grab playlist's cover image
+  waitForElement(
+    [
+      ".CmkY1Ag0tJDfnFXbGgju", // Playlist cover image's container
+      ".whXv9jYuEgS1DPTmPCe_"  // Playlist's single list container on left
+    ],
+    () => {
+      const cover = document.querySelector('.CmkY1Ag0tJDfnFXbGgju > img').getAttribute('src');
+      const playlistElement = document.querySelector(".whXv9jYuEgS1DPTmPCe_ > div");
+      playlistElement.style.backgroundImage = url(cover);
     }
   );
 })();
