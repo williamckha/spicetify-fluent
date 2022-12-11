@@ -9,8 +9,8 @@ echo "https://github.com/williamckha/spicetify-fluent"
 sleep 3s
 
 # Check if ~\.spicetify-cli\Themes\Fluent directory exists
-spicePath=dirname "$(spicetify -c)"
-themePath=dirname "$spicePath/Themes/Fluent"
+spicePath=$(dirname "$(spicetify -c)")
+themePath="$spicePath/Themes/Fluent"
 if [ ! -d $themePath ]; then
     echo "Creating Fluent theme folder..."
     mkdir -p $themePath
@@ -23,14 +23,14 @@ fi
 zipUri="https://github.com/williamckha/spicetify-fluent/archive/refs/heads/master.zip"
 zipSavePath="$themePath/fluent-master.zip"
 echo "Downloading spicetify-fluent latest master..."
-curl --fail --location --progress-bar --output "$zipUri" "$zipSavePath"
+curl --fail --location --progress-bar --output "$zipSavePath" "$zipUri" 
 
 
 # Extract theme from .zip file
 echo "Extracting..."
 unzip -d "$themePath" -o "$zipSavePath"
-mv "$themePath/spicetify-fluent-master/*" $themePath
-rmdir "$themePath/spicetify-fluent-master"
+mv $themePath/spicetify-fluent-master/* $themePath
+rm -rf $themePath/spicetify-fluent-master
 
 # Delete .zip file
 echo "Deleting zip file..."
