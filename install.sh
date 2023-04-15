@@ -39,16 +39,10 @@ rm "$zipSavePath"
 # Change Directory to the Theme Folder
 cd $themePath
 
-# Copy the fluent.js to the Extensions folder
-mkdir -p ../../Extensions
-cp fluent.js ../../Extensions/.
-echo "+ Installed fluent.js extension"
-
 # Apply the theme with spicetify config calls
-spicetify config extensions fluent.js
 spicetify config current_theme Fluent
 spicetify config color_scheme dark
-spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1 inject_theme_js 1
 echo "+ Configured Fluent theme"
 
 # Patch the xpui.js for sidebar fixes
