@@ -516,8 +516,6 @@ button.switch {
 
 .Root__nav-bar {
     z-index: 1 !important;
-    max-width: 85px !important;
-    height: calc(100% + 107px);
 }
 
 .main-navBar-navBar {
