@@ -21,6 +21,7 @@
 }
 
 .Root__main-view {
+    --text-subdued: var(--spice-subtext) !important;
     z-index: 0;
     background-color: var(--spice-main);
     height: 100%;
@@ -31,12 +32,13 @@
 }
 
 .os-scrollbar-handle {
-    border-radius: 50px;
+    border-radius: 50px !important;
     background: var(--spice-button-disabled) !important;
 }
 
 .os-theme-spotify > .os-scrollbar-vertical {
-    margin-right: 2px;
+    width: 4px;
+    margin-right: 4px;
 }
 
 .os-scrollbar-horizontal {
@@ -176,8 +178,53 @@
     background: var(--spice-sidebar);
 }
 
+.spotify__os--is-windows .main-topBar-container {
+    padding-inline-end: 9rem !important;
+    padding-inline-start: 5rem !important;
+}
+
 .main-topBar-container {
-    max-width: 100vw;
+    position: fixed !important;
+    /* width: 100vw !important; */
+    z-index: 5 !important;
+    padding: 0;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+}
+
+.main-topBar-topbarContentRight {
+    button {
+        height: 24px;
+        width: 24px;
+    }
+    svg {
+        color: var(--spice-text);
+    }
+}
+
+.main-topBar-searchBar {
+    flex: 0 1 400px;
+}
+
+.f59DF4qQ_FphIrVeRYkI {
+    top: 0;
+    background-color: transparent;
+}
+
+.fDhpniKuH2iCAIc_ZUeL {
+    background-color: rgba(var(--spice-accent), 0.85) !important;
+    backdrop-filter: blur(2rem) saturate(1.5) !important;
+    border-radius: var(--border-radius-2);
+    border-bottom: 2px solid var(--spice-main);
+}
+.rX_OmqCngvY5ZCoYBZgb.zyeJ9w99yrvGokL3BsMc,
+.rX_OmqCngvY5ZCoYBZgb.zyeJ9w99yrvGokL3BsMc::after {
+    background-color: transparent;
+}
+
+.main-view-container__scroll-node-child-spacer {
+    height: 0;
 }
 
 .main-entityHeader-withBackgroundImage {
@@ -210,12 +257,10 @@ h3,
 }
 
 .main-topBar-topbarContent {
-    position: absolute;
-    display: -webkit-box;
-    left: 50%;
-    top: 5px;
-    transform: translate(-50%, 0%);
-    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
 }
 
 .queue-tabBar-header {
@@ -227,21 +272,19 @@ h3,
     transition: background-color ease-out 167ms;
 }
 
+.main-topBar-historyButtons button {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    background-color: var(--spice-text);
+    padding: 0.125rem;
+}
+
 .main-topBar-historyButtons button:nth-child(1) {
     -webkit-mask-image: url("./fluentui-system-icons/ic_fluent_arrow_left_24_filled.svg");
-    margin-left: 60px;
-    background-color: var(--spice-text) !important;
-    padding: 5px;
-    width: 24px !important;
-    height: 24px !important;
 }
 
 .main-topBar-historyButtons button:nth-child(2) {
     -webkit-mask-image: url("./fluentui-system-icons/ic_fluent_arrow_right_24_filled.svg");
-    background-color: var(--spice-text) !important;
-    padding: 5px;
-    width: 24px !important;
-    height: 24px !important;
 }
 
 .main-userWidget-displayName,
@@ -355,6 +398,10 @@ h3,
 .search-active-icon path,
 .collection-active-icon path {
     display: none !important;
+}
+
+button {
+    color: var(--spice-subtext) !important;
 }
 
 .main-createPlaylistButton-button {
@@ -625,6 +672,13 @@ button.switch {
 
 .main-navBar-navBarLink {
     transition: background-color ease-out 167ms;
+}
+
+.main-nowPlayingView-content {
+    --text-subdued: var(--spice-subtext) !important;
+    .artist-artistOnTour-timeAndVenue {
+        color: var(--spice-subtext);
+    }
 }
 
 /* sidebar resizer */
@@ -995,6 +1049,8 @@ a[class*="-tabBar-headerItemLink"]:active {
 .x-searchInput-searchInputInput,
 .dIwMadpRrW1PwEwEeAbN,
 .G9iUss4eOSpJyn2VBzsS {
+    height: 2rem;
+    align-self: center;
     background-color: var(--spice-card);
     color: var(--spice-text) !important;
     border: 1px solid var(--spice-light-border);
@@ -1011,6 +1067,11 @@ a[class*="-tabBar-headerItemLink"]:active {
     border-bottom: var(--spice-accent) solid 2px;
 }
 
+.search-searchCategory-SearchCategory {
+    top: 0;
+    background-color: rgba(var(--spice-rgb-sidebar), 0.85);
+    backdrop-filter: blur(20px) saturate(2);
+}
 .x-searchInput-searchInput,
 .g3Xinb8x23n81ejvS9Uj {
     -webkit-box-flex: 1;
@@ -1239,10 +1300,8 @@ path[d="M23 0C10.298 0 0 10.297 0 23c0 12.702 10.298 23 23 23 12.703 0 23-10.298
     background-color: var(--spice-main);
 }
 
-.main-buddyFeed-buddyFeedRoot,
-.main-buddyFeed-buddyFeed {
-    width: 280px;
-    z-index: 0;
+.main-buddyFeed-container {
+    width: 400px !important;
 }
 
 .main-buddyFeed-buddyFeedRoot .main-avatar-avatar {
@@ -1354,9 +1413,7 @@ option {
 /* player */
 
 .Root__now-playing-bar {
-    padding-right: 6px;
-    margin: 0px 13px 13px 13px;
-    width: calc(100% - 26px);
+    padding: 0.5rem;
     box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.25) !important;
     border-radius: var(--border-radius-1);
     border: 1px solid var(--spice-player-border);
@@ -1437,11 +1494,6 @@ option {
     border-width: 4px !important;
 }
 
-.main-nowPlayingWidget-nowPlaying > .ellipsis-one-line,
-.main-trackInfo-container {
-    margin-left: 74px;
-}
-
 .main-coverSlotExpanded-container,
 .T6whS8zYB9fG_tIdTg6m {
     position: fixed;
@@ -1477,26 +1529,6 @@ option {
     100% {
         visibility: hidden;
     }
-}
-
-.main-coverSlotCollapsed-container,
-.zcsxy3fvYCmZGcE7VzW7 {
-    position: fixed;
-    top: -12px;
-    left: 0px;
-    width: 56px;
-    height: 56px;
-    visibility: visible;
-    z-index: 99999 !important;
-}
-
-.main-coverSlotCollapsed-container,
-.cover-art .cover-art-image,
-.zcsxy3fvYCmZGcE7VzW7 {
-    transform-origin: center;
-    transition-timing-function: ease-in;
-    transition: width 0.5s 0.2s, height 0.5s 0.2s, top 0.3s, left 0.5s,
-        box-shadow 0.5s;
 }
 
 .main-coverSlotCollapsed-container[aria-hidden="true"],
@@ -1576,13 +1608,13 @@ option {
     align-items: center;
 }
 
-.player-controls__buttons path {
-    display: none !important;
-}
+/* .player-controls__buttons path {
+  display: none !important; 
+} */
 
 .player-controls__left,
 .player-controls__right {
-    margin-top: 2px;
+    align-items: center;
 }
 
 .player-controls__buttons button {
@@ -1714,4 +1746,8 @@ option {
 .main-topBar-button[title="Full App Display"],
 .main-topBar-button[title="Bookmark"] {
     background-color: var(--spice-card) !important;
+}
+
+.encore-dark-theme .encore-over-media-set {
+    --background-base: rgba(var(--spice-subtext), 0.8);
 }
