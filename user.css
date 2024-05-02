@@ -207,8 +207,9 @@
     flex: 0 1 400px;
 }
 
-.f59DF4qQ_FphIrVeRYkI {
-    top: 0;
+.f59DF4qQ_FphIrVeRYkI,
+.main-trackList-trackListHeader {
+    top: -1px !important;
     background-color: transparent;
 }
 
@@ -679,12 +680,6 @@ button.switch {
     .artist-artistOnTour-timeAndVenue {
         color: var(--spice-subtext);
     }
-}
-
-/* sidebar resizer */
-
-.LayoutResizer__resize-bar {
-    display: none;
 }
 
 /* playlist sidebar */
@@ -1609,8 +1604,8 @@ option {
 }
 
 /* .player-controls__buttons path {
-  display: none !important; 
-} */
+    display: none !important; 
+  } */
 
 .player-controls__left,
 .player-controls__right {
